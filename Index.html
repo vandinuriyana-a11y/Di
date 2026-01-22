@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Monitoring Server Sekolah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .server-card {
+            background-colr: #2c2c3e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }/* ERROR: Kurung kurawal penutup hilang di sini */
+
+        .status-box {
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .online {
+            background-color:  #2ecc71;
+        }
+
+        .offline {
+            background-color:  #e74c3c;
+        }
+
+        .maintenance {
+            background-color:  #f1c40f;
+            color: black;
+        }
+
+        .icon {
+            font-size: 28px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #4cafef;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+         button:hover {
+            background-color: #3a9bdc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>📊 Dashboard Monitoring Server Sekolah</h1>
+
+    <!-- SERVER 1 -->
+    <div class="server-card">
+        <h2>Server Akademik</h2>
+        <p>IP Address: 192.168.50.2</p>
+        <p>Uptime: 12 Jam</p>
+        <div class="status-box online">ONLINE</div>
+    </div>
+
+    <!-- SERVER 2 -->
+    <div class="server-card">
+        <h2>Server CBT Ujian</h2>
+        <p>IP Address: 192.168.50.3</p>
+        <p>Uptime: 24 Jam</p>
+        <!-- ERROR: Uptime hilang -->
+        <div class="status-box offline">OFFLINE</div>
+       <!-- ERROR: Status offline tapi class masih online -->
+     
+      <div class="server-card">
+        <h2>NAS File Server</h2>
+        <p>IP Address: 192.168.50.5</p>
+        <p>Uptime: 24 Jam</p>
+        <div class="status-box maintenance">MAINTENANCE</div>
+    </div>
+
+    <!-- SERVER 3 -->
+    <!-- ERROR: Kodingan server ke-3 belum ada -->
+
+    <center>
+        <button>REFRESH STATUS</button>
+        <!-- ERROR: Tag penutup button hilang -->
+    </center>
+
+</div>
+
+</body>
+                              </html>
